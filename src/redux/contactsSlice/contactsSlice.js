@@ -6,7 +6,7 @@ import {
 } from 'helpers/operations.js';
 
 const contactsInitialState = {
-  items: [],
+  items: [{ name: 'john', number: '444-067-9520' }],
   isLoading: false,
   error: null,
 };

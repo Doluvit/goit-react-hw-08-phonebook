@@ -1,8 +1,16 @@
+
 import { Form, Field, ErrorMessage } from 'formik';
 import styled from 'styled-components';
 
-export const Container = styled(Form)`
-  margin-bottom: 20px;
+
+export const Container = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+`
+
+export const LogForm = styled(Form)`
+margin-top: 100px;
   padding: 20px;
   width: 360px;
   border: solid 2px transparent;
@@ -45,7 +53,10 @@ export const ErrorMsg = styled(ErrorMessage)`
 `;
 
 export const FormButton = styled.button`
+display: flex;
   padding: 10px 25px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-size: 24px;
   font-weight: 500;
