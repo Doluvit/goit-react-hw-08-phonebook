@@ -44,23 +44,26 @@ export const ErrorMsg = styled(ErrorMessage)`
   color: red;
 `;
 
-export const FormButton = styled.button`
+  export const FormButton = styled.button`
+  display: flex;
   padding: 10px 25px;
+  margin-left: auto;
+  margin-right: auto;
 
-  font-size: 24px;
-  font-weight: 500;
-  color: var(--textColor);
+  font-size: 18px;
+  font-weight: 600;
+  color: #e84a5f;
 
   background-color: var(--itemBackgroundColor);
   border-radius: 5px;
-  border: 2px solid transparent;
+  border: 2px solid #448585;
   box-shadow: var(--mainBoxShadow);
 
   cursor: pointer;
 
   transition: all 250ms ease-in-out;
 
-  :hover {
+  &:hover {
     color: var(--accentTextColor);
     background-color: var(--mainBackgroundColor);
   }

@@ -36,6 +36,8 @@ export const LoginForm = () => {
     resetForm();
   };
 
+  
+
   return (
     <Container>
       <Formik
@@ -55,7 +57,7 @@ export const LoginForm = () => {
             <Input name="password" type="password" id="password" />
             <ErrorMsg name="password" component="div" />
           </Section>
-          <FormButton type="submit">Login</FormButton>
+          <FormButton type="submit">Log in</FormButton>
         </LogForm>
       </Formik>
     </Container>

@@ -1,27 +1,31 @@
 // import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-// import { fetchContacts } from 'helpers/operations';
+import { fetchContacts } from 'redux/contacts/operations';
 
-import { selectContact, selectError, selectLoading } from 'redux/selectors';
+import {
+  selectContact,
+  selectError,
+  selectLoading,
+} from 'redux/contacts/selectors';
 import { FormHeader, MainContainer } from 'components/App.styled';
 import { ContactForm } from 'components/contactForm/contactForm';
 import { Filter } from 'components/filter/filter';
 import { ContactsText } from 'components/contactList/contactList.styled';
 import { ContactList } from 'components/contactList/contactList';
-
+import { useEffect } from 'react';
 
 const Contacts = () => {
   const contacts = useSelector(selectContact);
   const isLoading = useSelector(selectLoading);
   const error = useSelector(selectError);
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   dispatch(fetchContacts());
-  // }, [dispatch]);
+  useEffect(() => {
+    dispatch(fetchContacts());
+  }, [dispatch]);
 
   return (
     <MainContainer>

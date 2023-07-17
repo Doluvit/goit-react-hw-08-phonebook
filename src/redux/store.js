@@ -16,7 +16,7 @@ import {
   getDefaultMiddleware,
 } from '@reduxjs/toolkit';
 
-import { contactReducer } from './contactsSlice/contactsSlice';
+import { contactReducer } from './contacts/contactsSlice';
 import { filtersReducer } from './filtersSlice/filtersSlice';
 
 const rootReducer = combineReducers({

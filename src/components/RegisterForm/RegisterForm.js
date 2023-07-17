@@ -63,7 +63,7 @@ export const RegisterForm = () => {
             <Input name="password" type="text" id="password" />
             <ErrorMsg name="password" component="div" />
           </Section>
-          <FormButton type="submit">Login</FormButton>
+          <FormButton type="submit">Sine up</FormButton>
         </LogForm>
       </Formik>
     </Container>

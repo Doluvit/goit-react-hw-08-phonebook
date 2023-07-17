@@ -3,10 +3,10 @@ import {
   addContacts,
   deleteContacts,
   fetchContacts,
-} from 'helpers/operations.js';
+} from 'redux/contacts/operations.js';
 
 const contactsInitialState = {
-  items: [{ name: 'john', number: '444-067-9520' }],
+  items: [],
   isLoading: false,
   error: null,
 };

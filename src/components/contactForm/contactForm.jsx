@@ -2,8 +2,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 import { Formik } from 'formik';
 import * as yup from 'yup';
-import { selectContact } from 'redux/selectors.js';
-import { addContacts } from 'helpers/operations.js';
+import { selectContact } from 'redux/contacts/selectors.js';
+import { addContacts } from 'redux/contacts/operations.js';
 import {
   Container,
   Input,
@@ -32,7 +32,7 @@ export const ContactForm = () => {
     if (contacts.find(contact => contact.name === newContact.name)) {
       toast.error(`${newContact.name} is already in contacts.`);
     } else {
-      dispatch(addContacts(newContact));
+    dispatch(addContacts(newContact));
     }
   };
   const handleSubmit = (values, { resetForm }) => {

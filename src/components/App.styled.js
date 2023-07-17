@@ -2,10 +2,12 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const MainContainer = styled.div`
+padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fff;
+  border: 2px solid var(--textColor);
 `;
 
 export const FormHeader = styled.h2`

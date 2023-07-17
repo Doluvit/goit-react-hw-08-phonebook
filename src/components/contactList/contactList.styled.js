@@ -31,20 +31,21 @@ export const ContactsText = styled.p`
 `;
 
 export const ContactsBtn = styled.button`
+  display: flex;
   font-size: 14px;
-  font-weight: 500;
-  color: var(--textColor);
+  font-weight: 600;
+  color: #e84a5f;
 
   background-color: var(--itemBackgroundColor);
   border-radius: 5px;
-  border: 2px solid transparent;
+  border: 2px solid #448585;
   box-shadow: var(--mainBoxShadow);
 
   cursor: pointer;
 
   transition: all 250ms ease-in-out;
 
-  :hover {
+  &:hover {
     color: var(--accentTextColor);
     background-color: var(--mainBackgroundColor);
   }
