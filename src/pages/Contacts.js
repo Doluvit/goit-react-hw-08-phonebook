@@ -1,5 +1,5 @@
-// import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -15,7 +15,6 @@ import { ContactForm } from 'components/contactForm/contactForm';
 import { Filter } from 'components/filter/filter';
 import { ContactsText } from 'components/contactList/contactList.styled';
 import { ContactList } from 'components/contactList/contactList';
-import { useEffect } from 'react';
 
 const Contacts = () => {
   const contacts = useSelector(selectContact);

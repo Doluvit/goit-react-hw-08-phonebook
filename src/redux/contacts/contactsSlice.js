@@ -1,9 +1,11 @@
 import { createSlice, isAllOf } from '@reduxjs/toolkit';
+import { logOut } from 'redux/auth/operations';
 import {
   addContacts,
   deleteContacts,
   fetchContacts,
 } from 'redux/contacts/operations.js';
+
 
 const contactsInitialState = {
   items: [],
@@ -49,6 +51,11 @@ const contactsSlice = createSlice({
       .addCase(fetchContacts.fulfilled, handleFulfilledFetch)
       .addCase(addContacts.fulfilled, handleFulfilledAdd)
       .addCase(deleteContacts.fulfilled, handleFulfilledDelete)
+      .addCase(logOut.fulfilled, state => {
+        state.items = [];
+        state.error = null;
+        state.isLoading = false;
+      })
       .addMatcher(
         isAllOf(
           fetchContacts.pending,
