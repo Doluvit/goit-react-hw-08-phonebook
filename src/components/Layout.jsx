@@ -3,7 +3,7 @@ import { AppBar } from './AppBar/AppBar';
 import { Suspense } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { LayoutContainer } from 'pages/Pages.styled';
+import { LayoutContainer } from 'pages/pages.styled/Pages.styled';
 
 export const Layout = () => {
   return (

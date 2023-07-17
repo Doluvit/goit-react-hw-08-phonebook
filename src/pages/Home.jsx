@@ -1,6 +1,6 @@
-import { Container, Img, Title } from "./Pages.styled";
-import img from "../img/contacts.png"
-import { MainContainer } from "components/App.styled";
+import { Container, Img, Title } from './pages.styled/Pages.styled';
+import img from '../img/contacts.png';
+import { MainContainer } from 'components/App.styled';
 
 export default function Home() {
   return (
