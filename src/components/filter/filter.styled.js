@@ -1,11 +1,9 @@
-import styled from "styled-components";
-
+import styled from 'styled-components';
 
 export const FilterContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
 `;
 
 export const FilterLabel = styled.label`
@@ -18,11 +16,11 @@ export const FilterLabel = styled.label`
 
 export const FilterInput = styled.input`
   padding: 5px 10px;
-  background-color: #daecf0;
+  background-color: var(--mainBackgroundColor);
   font-size: 24px;
   color: var(--textColor);
 
-  border: 2px solid transparent;
+  border: solid 2px var(--textColor);
   border-radius: 5px;
   box-shadow: var(--insetBoxShadow);
 `;

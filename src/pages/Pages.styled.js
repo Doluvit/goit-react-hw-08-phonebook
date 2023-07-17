@@ -17,11 +17,11 @@ export const LayoutContainer = styled.div`
   max-width: 960px;
   margin: 20px auto;
   padding: 16px 16px 40px 16px;
-  border: 2px solid #448585;
+  border: solid 2px var(--textColor);
   border-radius: 5px;
   box-shadow: var(--mainBoxShadow);
-  background-color: #daecf0;
+  background-color: var(--mainBackgroundColor);
 `;
 export const Img = styled.img`
-  margin-top: 10%;
+  margin-top: 5%;
 `;

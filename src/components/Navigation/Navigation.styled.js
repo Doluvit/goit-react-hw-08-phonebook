@@ -9,6 +9,6 @@ export const NavigationLink = styled(NavLink)`
   color: var(--textColor);
 
   &.active {
-    color: #e84a5f;
+    color: var(--accent-btn-color);
   }
 `;

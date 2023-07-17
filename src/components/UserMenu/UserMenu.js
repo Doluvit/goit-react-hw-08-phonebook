@@ -11,7 +11,7 @@ export const UserMenu = () => {
 
   return (
     <Wrapper>
-      <UserName>Welcome, {user.name}</UserName>
+      <UserName>{user.name}</UserName>
       <LogOutButton type="button" onClick={hadleLogOut}>
         Log out
       </LogOutButton>

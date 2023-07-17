@@ -2,17 +2,18 @@ import styled from 'styled-components';
 
 export const ContactsContainer = styled.div`
   margin-top: 20px;
+  border: solid 2px var(--textColor);
+  border-radius: 5px;
 `;
 
 export const ContactsList = styled.ul`
   padding: 20px 20px 10px 20px;
   margin: 0;
-  width: 380px;
+  width: 360px;
   border: solid 2px transparent;
   border-radius: 5px;
-  box-shadow: var(--mainBoxShadow);
   list-style: inside;
-  background-color: #daecf0;
+  background-color: var(--mainBackgroundColor);
 `;
 
 export const ContactsItem = styled.li`
@@ -34,11 +35,11 @@ export const ContactsBtn = styled.button`
   display: flex;
   font-size: 14px;
   font-weight: 600;
-  color: #e84a5f;
+  color: var(--accent-btn-color);
 
   background-color: var(--itemBackgroundColor);
   border-radius: 5px;
-  border: 2px solid #448585;
+  border: solid 2px var(--textColor);
   box-shadow: var(--mainBoxShadow);
 
   cursor: pointer;
@@ -47,6 +48,6 @@ export const ContactsBtn = styled.button`
 
   &:hover {
     color: var(--accentTextColor);
-    background-color: var(--mainBackgroundColor);
+    background-color: var(--accent-btn-color);
   }
 `;

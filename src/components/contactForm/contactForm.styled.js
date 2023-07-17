@@ -5,10 +5,9 @@ export const Container = styled(Form)`
   margin-bottom: 20px;
   padding: 20px;
   width: 360px;
-  border: solid 2px transparent;
+  border: solid 2px var(--textColor);
   border-radius: 5px;
-  box-shadow: var(--mainBoxShadow);
-  background-color: #daecf0;
+  background-color: var(--mainBackgroundColor);
 `;
 
 export const Section = styled.div`
@@ -23,20 +22,20 @@ export const Section = styled.div`
 export const Label = styled.label`
   margin-bottom: 10px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   color: var(--textColor);
 `;
 
 export const Input = styled(Field)`
+  width: 95%;
   padding: 5px 10px;
 
-  font-size: 24px;
+  font-size: 18px;
   color: var(--textColor);
 
   background-color: transparent;
-  border: 2px solid transparent;
+  border: solid 2px var(--textColor);
   border-radius: 5px;
-  box-shadow: var(--insetBoxShadow);
 `;
 
 export const ErrorMsg = styled(ErrorMessage)`
@@ -44,7 +43,7 @@ export const ErrorMsg = styled(ErrorMessage)`
   color: red;
 `;
 
-  export const FormButton = styled.button`
+export const FormButton = styled.button`
   display: flex;
   padding: 10px 25px;
   margin-left: auto;
@@ -52,11 +51,11 @@ export const ErrorMsg = styled(ErrorMessage)`
 
   font-size: 18px;
   font-weight: 600;
-  color: #e84a5f;
+  color: var(--accent-btn-color);
 
   background-color: var(--itemBackgroundColor);
   border-radius: 5px;
-  border: 2px solid #448585;
+  border: solid 2px var(--textColor);
   box-shadow: var(--mainBoxShadow);
 
   cursor: pointer;
@@ -65,6 +64,6 @@ export const ErrorMsg = styled(ErrorMessage)`
 
   &:hover {
     color: var(--accentTextColor);
-    background-color: var(--mainBackgroundColor);
+    background-color: var(--accent-btn-color);
   }
 `;

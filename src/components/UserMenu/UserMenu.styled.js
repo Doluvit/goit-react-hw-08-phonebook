@@ -18,11 +18,11 @@ export const LogOutButton = styled.button`
 
   font-size: 14px;
   font-weight: 700;
-  color: #e84a5f;
+  color: var(--accent-btn-color);
 
   background-color: var(--itemBackgroundColor);
   border-radius: 5px;
-  border: 2px solid #448585;
+  border: solid 2px var(--textColor);
   box-shadow: var(--mainBoxShadow);
 
   cursor: pointer;
@@ -31,6 +31,6 @@ export const LogOutButton = styled.button`
 
   &:hover {
     color: var(--accentTextColor);
-    background-color: var(--mainBackgroundColor);
+    background-color: var(--accent-btn-color);
   }
 `;

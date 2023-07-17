@@ -10,11 +10,11 @@ export const Container = styled.div`
 
 export const LogForm = styled(Form)`
   padding: 20px;
-  width: 360px;
-  border: 2px solid #448585;
+  width: 250px;
+  border: solid 2px var(--textColor);
   border-radius: 5px;
   box-shadow: var(--mainBoxShadow);
-  background-color: #fff;
+  background-color: var(--mainBackgroundColor);
 `;
 
 export const Section = styled.div`
@@ -29,18 +29,18 @@ export const Section = styled.div`
 export const Label = styled.label`
   margin-bottom: 10px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   color: var(--textColor);
 `;
 
 export const Input = styled(Field)`
   padding: 5px 10px;
 
-  font-size: 24px;
+  font-size: 18px;
   color: var(--textColor);
 
   background-color: transparent;
-  border: 2px solid transparent;
+  border: solid 2px var(--textColor);
   border-radius: 5px;
   box-shadow: var(--insetBoxShadow);
 `;
@@ -58,11 +58,11 @@ export const FormButton = styled.button`
 
   font-size: 18px;
   font-weight: 600;
-  color: #e84a5f;
+  color: var(--accent-btn-color);
 
   background-color: var(--itemBackgroundColor);
   border-radius: 5px;
-  border: 2px solid #448585;
+  border: solid 2px var(--textColor);
   box-shadow: var(--mainBoxShadow);
 
   cursor: pointer;
@@ -71,6 +71,6 @@ export const FormButton = styled.button`
 
   &:hover {
     color: var(--accentTextColor);
-    background-color: var(--mainBackgroundColor);
+    background-color: #138531;
   }
 `;

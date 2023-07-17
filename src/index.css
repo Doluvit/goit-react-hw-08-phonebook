@@ -16,8 +16,9 @@ code {
 }
 
 :root {
-  --mainBackgroundColor: #3cacacb0;
+  --mainBackgroundColor: #daecf0;
   --itemBackgroundColor: #e5f3f2;
+  --accent-btn-color: #e84a5f;
   --textColor: #448585;
   --secondaryTextColor: #000;
   --accentTextColor: #fff;
