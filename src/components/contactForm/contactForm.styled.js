@@ -64,6 +64,6 @@ export const FormButton = styled.button`
 
   &:hover {
     color: var(--accentTextColor);
-    background-color: var(--accent-btn-color);
+    background-color: #138531;
   }
 `;
